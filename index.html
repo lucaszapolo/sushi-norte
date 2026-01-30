@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushi Norte | Tradição e Modernidade</title>
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="/images/logo.png" alt="Sushi Norte" class="logo-img">
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#rodizios">Rodízios</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/00000000" class="btn btn-primary" target="_blank">
+        <i class="icon-whatsapp"></i> Faça sua reserva agora
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container text-center">
+        <h1 class="hero-title">Tradição e <span class="text-red">Modernidade</span></h1>
+        <p class="hero-subtitle">Experimente o melhor da culinária japonesa em um ambiente exclusivo.</p>
+        <a href="https://wa.me/00000000" class="btn btn-primary btn-lg mt-md">
+          Faça sua reserva agora
+        </a>
+      </div>
+    </section>
+
+    <!-- RODÍZIOS (PRICING) -->
+    <section id="rodizios" class="section">
+      <div class="container">
+        <h2 class="section-title text-center mb-lg">Nossos Rodízios</h2>
+
+        <div class="pricing-grid">
+          <!-- Card Norte -->
+          <div class="pricing-card">
+            <h3>Rodízio Norte</h3>
+            <p class="price">R$ 199,90 <small>/Casal</small></p>
+            <ul class="features">
+              <li>Entradas</li>
+              <li>Sushis</li>
+              <li>Refrigerantes</li>
+              <li>5 Sashimi de Salmão (por pessoa)</li>
+              <li>1 Sobremesa (por pessoa)</li>
+            </ul>
+            <a href="https://wa.me/00000000?text=Olá, gostaria de reservar o Rodízio Norte!" class="btn btn-card mt-md"
+              target="_blank">Reservar</a>
+          </div>
+
+          <!-- Card Supremo -->
+          <div class="pricing-card featured">
+            <div class="badge">Mais Pedido</div>
+            <h3>Rodízio Supremo</h3>
+            <p class="price">R$ 231,00 <small>/Casal</small></p>
+            <ul class="features">
+              <li>Entradas e Entradas de Camarão</li>
+              <li>Sushis Especiais</li>
+              <li>Refrigerantes</li>
+              <li>Sashimi à Vontade</li>
+              <li>Sobremesa à Vontade</li>
+            </ul>
+            <a href="https://wa.me/00000000?text=Olá, gostaria de reservar o Rodízio Supremo!"
+              class="btn btn-primary mt-md" target="_blank">Quero Este</a>
+          </div>
+        </div>
+
+        <div class="disclaimer text-center mt-md">
+          <p class="disclaimer-text">Crianças: Obrigatória apresentação de RG para validação de idade.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUES DO MENU -->
+    <section id="destaques" class="section bg-secondary">
+      <div class="container">
+        <h2 class="section-title text-center mb-lg">Destaques do Menu</h2>
+        <div class="menu-carousel">
+          <!-- Set 1 -->
+          <div class="menu-item">
+            <img src="/images/prato1.jpg" alt="Prato Especial 1" loading="lazy">
+          </div>
+          <div class="menu-item">
+            <img src="/images/prato2.jpg" alt="Prato Especial 2" loading="lazy">
+          </div>
+          <div class="menu-item">
+            <img src="/images/prato3.jpg" alt="Prato Especial 3" loading="lazy">
+          </div>
+
+          <!-- Set 2 (Clone) -->
+          <div class="menu-item">
+            <img src="/images/prato1.jpg" alt="Prato Especial 1" loading="lazy">
+          </div>
+          <div class="menu-item">
+            <img src="/images/prato2.jpg" alt="Prato Especial 2" loading="lazy">
+          </div>
+          <div class="menu-item">
+            <img src="/images/prato3.jpg" alt="Prato Especial 3" loading="lazy">
+          </div>
+
+          <!-- Set 3 (Clone) -->
+          <div class="menu-item">
+            <img src="/images/prato1.jpg" alt="Prato Especial 1" loading="lazy">
+          </div>
+          <div class="menu-item">
+            <img src="/images/prato2.jpg" alt="Prato Especial 2" loading="lazy">
+          </div>
+          <div class="menu-item">
+            <img src="/images/prato3.jpg" alt="Prato Especial 3" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO & AMBIENTE -->
+    <section id="localizacao" class="section">
+      <div class="container">
+        <h2 class="section-title text-center mb-lg">Localização & Ambiente</h2>
+
+        <div class="location-grid">
+          <div class="ambience-gallery">
+            <img src="/images/ambiente1.png" alt="Ambiente Sushi Norte" class="gallery-img">
+            <img src="/images/ambiente2.png" alt="Interior Restaurante" class="gallery-img">
+            <img src="/images/ambiente3.png" alt="Detalhes Ambiente" class="gallery-img">
+          </div>
+
+          <div class="map-info">
+            <!-- Google Map -->
+            <iframe
+              src="https://maps.google.com/maps?q=Rua+Jose+Quintana+Gonzales,+4705+-+Jardim+Res.+Vetorasso,+São+José+do+Rio+Preto+-+SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="address-details mt-md">
+              <p class="info-text">Rua José Quintana Gonzales, 4705 - Jd. Res. Vetorasso, São José do Rio Preto - SP</p>
+              <p class="info-text"><span class="text-red">Terça a Domingo:</span> 19:00 às 23:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer section">
+    <div class="container text-center">
+      <div class="social-icons mb-md">
+        <a href="https://www.facebook.com/sushinortejapanesefood/?locale=pt_BR" class="social-link">Facebook</a>
+        <a href="https://www.instagram.com/sushinorterp/" class="social-link">Instagram</a>
+      </div>
+      <p>&copy; 2026 Sushi Norte. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
