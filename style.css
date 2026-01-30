@@ -536,6 +536,7 @@ img {
     cursor: pointer;
     z-index: 1001;
     /* Above mobile menu */
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mobile-menu-btn .bar {
@@ -630,12 +631,18 @@ img {
         background-color: var(--color-bg-primary);
         width: 100%;
         height: calc(100vh - 70px);
+        /* Fallback for browsers not supporting dvh */
+        height: calc(100dvh - 70px);
         /* Full height minus header */
         text-align: center;
         transition: 0.3s;
         z-index: 999;
         padding: 40px 0;
         overflow-y: auto;
+        overscroll-behavior: contain;
+        /* Prevent scroll chaining */
+        -webkit-overflow-scrolling: touch;
+        /* Smooth scrolling on iOS */
     }
 
     .nav.active {
