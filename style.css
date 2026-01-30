@@ -673,6 +673,8 @@ img {
         min-height: 80vh;
         padding-top: 20px;
         align-items: center;
+        /* Fix for Safari Mobile: fixed background often breaks */
+        background-attachment: scroll;
     }
 
     .hero-content {
