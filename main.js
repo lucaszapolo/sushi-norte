@@ -68,3 +68,23 @@ if (carousel) {
         requestAnimationFrame(smoothScroll);
     });
 }
+
+// 4. Mobile Menu Toggle
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const nav = document.querySelector('.nav');
+const navLinks = document.querySelectorAll('.nav-list a');
+
+if (mobileBtn) {
+    mobileBtn.addEventListener('click', () => {
+        mobileBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileBtn.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+}
